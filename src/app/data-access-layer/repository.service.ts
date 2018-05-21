@@ -8,6 +8,6 @@ export class RepositoryService {
   constructor(private adalSrv:AdalService) { }
 
   messagesList():Observable<any>{
-    return this.adalSrv.get(this.adalSrv.config.endpoints.graphApiUri, `${this.adalSrv.config.endpoints.graphApiUri}/v1.0/me/messages`);
+    return this.adalSrv.get(this.adalSrv.config.endpoints.graphApiUri, `${this.adalSrv.config.endpoints.graphApiUri}/api/PortalParameter/?host=clevelandclinic`);
   }
 }

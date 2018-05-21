@@ -8,13 +8,14 @@ export const environment = {
   production: false,
 
   adalConfig: {
-    tenant: 'XXX.onmicrosoft.com',
-    clientId: 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
+    tenant: 'mikedlogicjunction.onmicrosoft.com',
+    clientId: '44364913-7fe1-4ba7-abb4-f8fd7e7c8202',
     postLogoutRedirectUri: window.location.origin,
     endpoints: {
-      graphApiUri: 'https://graph.microsoft.com',
+      graphApiUri: 'https://ljrestservicestaging-ad.azurewebsites.net',
     },
+    requireADLogin: true,
     cacheLocation: 'localStorage',
-    redirectUri:`${window.location.origin}/frame-redirect`
+    redirectUri:`${window.location.origin}`
   }
 };
